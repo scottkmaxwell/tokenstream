@@ -1,0 +1,8 @@
+build/
+bin/
+.idea/
+.vs/
+cmake-build-debug/
+packages/
+x64/
+Win32/

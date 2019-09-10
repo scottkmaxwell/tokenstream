@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="TokenStream::Reader">
+    <DisplayString Condition="m_end &gt; m_offset">{{ size={m_end} position={m_offset} }}</DisplayString>
+    <DisplayString Condition="m_end == m_offset">{{ size={m_end} }}</DisplayString>
+  </Type>
+</AutoVisualizer>

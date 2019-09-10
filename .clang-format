@@ -1,0 +1,63 @@
+Language: Cpp
+AccessModifierOffset: -1
+AlignAfterOpenBracket: true
+AlignEscapedNewlines: Right
+AlignOperands: false
+AlignTrailingComments: true
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeBinaryOperators: None
+BreakBeforeBraces: Attach
+BreakBeforeInheritanceComma: true
+BreakBeforeTernaryOperators: false
+BreakConstructorInitializers: AfterColon
+BreakStringLiterals: true
+ColumnLimit: 100
+#CommentPragmas:
+CompactNamespaces: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+#ConstructorInitializerIndentWidth: 4
+#ContinuationIndentWidth: 0
+Cpp11BracedListStyle: true
+FixNamespaceComments: true
+IndentCaseLabels: true
+IndentWidth: 2
+IndentWrappedFunctionNames: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: None
+PointerAlignment: Left
+ReflowComments: false
+SortIncludes: CaseInsensitive
+IncludeCategories:
+  - Regex: '^"'                # local project includes at the top
+    Priority: 1
+  - Regex: '^<(gtest|gmock)/'  # put test includes last
+    Priority: 100
+  - Regex: '^<.+(/|\.h)'       # external references with a path component or with a file extension (3rd party stuff)
+    Priority: 2
+  - Regex: '^<'                # external references without a path or suffix should be stdlib headers
+    Priority: 3
+SortUsingDeclarations: false
+SpaceAfterCStyleCast: false
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpacesInContainerLiterals: true
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+Standard: c++14
+TabWidth: 2
+UseTab: Never
